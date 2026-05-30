@@ -49,13 +49,18 @@ GET /api/hyperliquid/{wallet}/pnl
 GET /api/hyperliquid/0x5078c2fbea2b2ad61bc840bc023e35fce56bebdb/pnl?start=2026-01-01&end=2026-01-31
 ```
 
-### Query Parameters
+### Test Data
 
-| Parameter | Description |
-|------------|-------------|
-| wallet | 0x5078c2fbea2b2ad61bc840bc023e35fce56bedb6 |
-1=| start | Start date (2025-07-01) |, 2=| Start date (2025-07-10) |, 3=| Start date (2026-01-01) |
-1=| end | End date (2025-07-31) |, 2=| End date (2025-07-20) |, 3=| End date (2026-01-31) |
+**Wallet**
+
+```text
+0x5078c2fbea2b2ad61bc840bc023e35fce56bedb6
+| Start Date | End Date   |
+| ---------- | ---------- |
+| 2025-07-01 | 2025-07-31 |
+| 2025-07-10 | 2025-07-20 |
+| 2026-01-01 | 2026-01-31 |
+
 
 ## Run Tests
 
