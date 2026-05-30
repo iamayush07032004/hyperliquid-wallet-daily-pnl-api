@@ -25,17 +25,13 @@ uvicorn app:app --reload
 
 Application URL:
 
-```text
 http://127.0.0.1:8000
-```
 
 ## API Documentation
 
 Swagger UI:
 
-```text
 http://127.0.0.1:8000/docs
-```
 
 ## Endpoint
 
@@ -65,6 +61,28 @@ GET /api/hyperliquid/0x5078c2fbea2b2ad61bc840bc023e35fce56bedb6/pnl?start=2026-0
 | 2025-07-10 | 2025-07-20 |
 | 2026-01-01 | 2026-01-31 |
 
+## Run with Docker
+
+Build Docker image:
+
+```bash
+docker build -t hyperliquid-pnl-api .
+```
+
+Run Docker container:
+
+```bash
+docker run -p 8000:8000 hyperliquid-pnl-api
+```
+
+Docker Application URL:
+
+http://localhost:8000
+
+Docker Swagger UI:
+
+http://localhost:8000/docs
+
 ## Run Tests
 
 ```bash
@@ -77,6 +95,7 @@ pytest
 - FastAPI
 - Uvicorn
 - Pytest
+- Docker
 
 ## Repository
 
