@@ -11,7 +11,7 @@ A FastAPI backend service that calculates daily Profit & Loss (PnL) for a Hyperl
 - Unit tests included
 - Interactive API documentation with Swagger
 
-Install dependencies:
+## Installation
 
 ```bash
 pip install -r requirements.txt
@@ -46,21 +46,24 @@ GET /api/hyperliquid/{wallet}/pnl
 ### Example Request
 
 ```http
-GET /api/hyperliquid/0x5078c2fbea2b2ad61bc840bc023e35fce56bebdb/pnl?start=2026-01-01&end=2026-01-31
+GET /api/hyperliquid/0x5078c2fbea2b2ad61bc840bc023e35fce56bedb6/pnl?start=2026-01-01&end=2026-01-31
 ```
 
-### Test Data
+## Test Data
 
-**Wallet**
+### Wallet
 
 ```text
 0x5078c2fbea2b2ad61bc840bc023e35fce56bedb6
-| Start Date | End Date   |
-| ---------- | ---------- |
+```
+
+### Date Ranges
+
+| Start Date | End Date |
+|------------|----------|
 | 2025-07-01 | 2025-07-31 |
 | 2025-07-10 | 2025-07-20 |
 | 2026-01-01 | 2026-01-31 |
-
 
 ## Run Tests
 
